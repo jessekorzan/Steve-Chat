@@ -9,6 +9,7 @@ A clean, modern chat interface for connecting with AI agents and workflows. Buil
 - 💬 **Real-time Streaming** - Supports streaming responses for natural conversation flow
 - 🖼️ **Image Support** - Drag & drop or paste images directly into the chat
 - 📱 **Responsive Design** - Works great on desktop and mobile
+- 🌙 **Dark Mode Support** - Automatically adapts to system dark/light mode preferences
 - 💾 **Session Management** - Maintains chat history across browser sessions
 - 🔗 **URL Parameters** - Share specific prompts via URL (`?p=your prompt here`)
 - ⚡ **Zero Dependencies** - Pure vanilla JavaScript, no frameworks required
