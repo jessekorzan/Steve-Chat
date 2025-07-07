@@ -1,8 +1,8 @@
 
 // Core configuration and constants
 export const CONFIG = {
-    webhookUrl: 'https://n8n-service-u37x.onrender.com/webhook/chat',
-    webhookImage: 'https://n8n-service-u37x.onrender.com/webhook/image',
+    webhookUrl: 'https://n8n-service.com/webhook/chat', // Replace with your actual webhook URL
+    webhookImage: 'https://n8n-service.com/webhook/image', // Replace with your actual image webhook URL
     maxStoredMessages: 15
 };
 
