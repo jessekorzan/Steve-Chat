@@ -1,7 +1,7 @@
 
 # AI Chat Interface
 
-A clean, modern chat interface for connecting with AI agents and workflows. Built with vanilla JavaScript and designed to be easily customizable and deployable.
+A clean, modern chat interface for connecting with AI agents and workflows. Built with vanilla JavaScript and designed to be easily customizable and deployable. Works great with n8n AI agents - just need a webhook!
 
 ## Features
 
@@ -12,6 +12,7 @@ A clean, modern chat interface for connecting with AI agents and workflows. Buil
 - 💾 **Session Management** - Maintains chat history across browser sessions
 - 🔗 **URL Parameters** - Share specific prompts via URL (`?p=your prompt here`)
 - ⚡ **Zero Dependencies** - Pure vanilla JavaScript, no frameworks required
+- ⌨️ **Slash Commands** - Quick access to common actions via `/` menu
 
 ## Quick Start
 
@@ -96,6 +97,25 @@ Your webhook should return streaming text responses. The interface will display 
 Share specific prompts by adding `?p=your prompt` to the URL:
 ```
 https://your-app.com?p=Tell me about AI
+```
+
+### Slash Commands
+Type `/` in the chat input to access quick commands:
+
+- `/help` - Get assistance on how to work together
+- `/history clear` - Clear the chat history 
+- `/tools` - Learn about available tools and features
+
+Example usage:
+```
+Type: /help
+Result: Explains how we can work together!
+
+Type: /history clear  
+Result: Clears all chat messages from storage
+
+Type: /tools
+Result: Shows what tools can be used in the interface
 ```
 
 ## Customization
