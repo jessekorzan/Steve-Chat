@@ -1,0 +1,72 @@
+/* Slash command menu styles */
+.slash-command-menu {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    background: var(--white);
+    border-radius: 0.25rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -20px 44px 22px var(--purpleLight);
+    padding: 0;
+    font-size: 14px;
+    overflow: hidden;
+    max-height: 200px;
+    overflow-y: auto;
+    line-height: 144%;
+}
+
+.command-option {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.command-option:hover {
+    background: var(--blueLight);
+}
+
+.command-name {
+    font-weight: 600;
+    color: var(--blue);
+    font-family: monospace;
+}
+
+.command-desc {
+    font-size: 0.85em;
+    opacity: 0.7;
+}
+
+/* Context menu styles */
+.custom-context-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: var(--white);
+    border-radius: 0.25rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    min-width: 160px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.context-option {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: var(--text);
+}
+
+.context-option:hover {
+    background: var(--blueLight);
+    color: var(--blue);
+}
+
+.context-option:active {
+    background: var(--blue);
+    color: var(--white);
+}

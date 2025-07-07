@@ -1,0 +1,98 @@
+
+/* Input container and textarea styles */
+div.in {
+    position: relative;
+    height: auto;
+    grid-gap: 0.5rem;
+    position: sticky;
+    bottom: 4rem;
+    background: white;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7DF1B6, #3751FF);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-filter: blur(12px);
+    box-shadow: 0px 0px 66px 44px var(--purpleLight);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    justify-content: flex-end;
+    padding: 1px;
+    grid-gap: 0px;
+    border-radius: 0.6rem;
+}
+
+div.in:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 0.6rem;
+    background-image: linear-gradient(to right, #7DF1B6, #3751FF);
+}
+
+textarea {
+    width: 100%;
+    border: 0px;
+    padding: 1.5rem 5rem 0 1.5rem;
+    resize: none;
+    border-radius: 0.5rem;
+    background: var(--white);
+    color: var(--black);
+    transition: all 230ms ease-in-out;
+    height: clamp(40px, 420px, 80px);
+    border-radius: 8px 0px 0px 8px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+div.in textarea,
+div.in button {
+    transition: all 230ms ease-in-out;
+    height: clamp(40px, 420px, 80px);
+}
+
+div.in button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    transition: all 230ms ease-in-out;
+}
+
+div.in button svg {
+    fill: var(--blue);
+    pointer-events: none;
+}
+
+div.in button:hover {
+    background: var(--blue);
+}
+
+div.in button:hover svg {
+    fill: var(--white);
+}
+
+div.in:has(textarea:focus) textarea,
+div.in:has(textarea:focus) button {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+main.processing div.in {
+    pointer-events: none;
+}
+
+main.processing div.in textarea,
+main.processing div.in button {
+    pointer-events: none;
+    user-select: none;
+}

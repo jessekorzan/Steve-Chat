@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "vars.css";
+@import "reset.css";
+@import "App.css";
+@import "components/chat.css";
+@import "components/input.css";
+@import "components/menus.css";
+@import "components/spinner.css";
+@import "components/layout.css";

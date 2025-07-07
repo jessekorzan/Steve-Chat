@@ -1,0 +1,65 @@
+
+/* Layout and grid styles */
+.preview {
+    padding: 2rem;
+    border-radius: 0.25rem;
+    background: var(--blueLight);
+    border-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+[class*='-column'] {
+    margin-bottom: 3rem;
+}
+
+.two-column,
+.two-column-wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.two-column img,
+.two-column-wide img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.two-column-wide {
+    grid-template-columns: 2fr 1fr;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.three-column img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.shoutout {
+    border-left: 0.5rem solid var(--black);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.shoutout h1 {
+    font-size: 222% !important;
+    line-height: 112%;
+    margin-bottom: 1rem;
+}
+
+.shoutout p {
+    margin-bottom: 0;
+}
+
+.big-list {
+    margin-top: 3rem;
+}

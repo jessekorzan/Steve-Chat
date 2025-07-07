@@ -1,0 +1,83 @@
+
+/* Loading spinner styles */
+.spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    height: 2px;
+    border-radius: 12px;
+    background: var(--blue);
+    animation: slide 1.22s ease-in-out infinite;
+}
+
+main.processing .spinner {
+    display: block;
+}
+main.processing {
+    cursor: wait;
+}
+main.processing .prompt {
+    pointer-events: none;
+    cursor: wait;
+}
+
+@keyframes slide {
+    0% {
+        left: 1%;
+        width: 2px;
+        background: var(--green);
+    }
+
+    25% {
+        left: 50%;
+        width: 60px;
+        background: var(--green);
+    }
+
+    50% {
+        left: 99%;
+        width: 2px;
+        background: var(--blue);
+    }
+
+    75% {
+        left: 50%;
+        width: 60px;
+        background: var(--blue);
+    }
+
+    100% {
+        left: 1%;
+        width: 2px;
+        background: var(--green);
+    }
+}
+
+@keyframes thinking {
+    0% {
+        opacity: 0.88;
+        color: var(--black);
+    }
+
+    50% {
+        opacity: 0.2;
+        color: var(--black);
+    }
+
+    100% {
+        opacity: 0.88;
+        color: var(--black);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
